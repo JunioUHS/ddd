@@ -18,13 +18,11 @@ describe("Customer unit tests", () => {
     });
 
     it("should change name", () => {
-        //Arrange
-        let customer = new Customer("123", "John");
 
-        //Act
+        let customer = new Customer("123", "John");
+        
         customer.changeName("Jane");
 
-        //Assert
         expect(customer.name).toBe("Jane");
     });
 
