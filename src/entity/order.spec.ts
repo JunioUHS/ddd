@@ -63,7 +63,7 @@ describe("Order unit tests", () => {
     it("should calculate order item total", () => {
 
         let orderItem = new OrderItem("123", "123", "Item 1", 100, 2);
-        
+
         expect(orderItem.orderItemTotal()).toBe(200);
     });
 
@@ -77,7 +77,7 @@ describe("Order unit tests", () => {
         expect(order.total()).toBe(200);
 
         let order2 = new Order("123", "123", [item1, item2]);
-        
+
         expect(order2.total()).toBe(600);
     });
 });
