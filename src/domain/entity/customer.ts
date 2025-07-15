@@ -22,6 +22,14 @@ export default class Customer {
         return this._name;
     }
 
+    get Address(): Address | undefined {
+        return this._address;
+    }
+
+    set Address(address: Address) {
+        this._address = address;
+    }
+
     get rewardPoints(): number {
         return this._rewardPoints;
     }
@@ -42,6 +50,10 @@ export default class Customer {
 
     isActive(): boolean {
         return this._active;
+    }
+
+    changeAddress(address: Address) {
+        this._address = address;
     }
 
     activate() {
